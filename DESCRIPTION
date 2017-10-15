@@ -1,9 +1,11 @@
 Package: MyownpackageX2017
-Title: What the Package Does (one line, title case)
+Title: My own package - X 2017
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Margaux", "Girard-Soppet", email = "margaux.girard-soppet@polytehnique.edu", role = c("aut", "cre"))
+Description: Useful functions to deal with excel and csv files and to plot descriptive graphs.
 Depends: R (>= 3.3.3)
-License: What license is it under?
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
+Imports: assertthat
