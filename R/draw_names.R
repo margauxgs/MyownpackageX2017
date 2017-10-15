@@ -40,11 +40,12 @@ draw_names <- function(names){
 #' draw_a_name(the_name,the_sex)
 #' }
 draw_a_name <- function(the_name,the_sex){
+  assert_that(is.character(the_name))
+  assert_that(is.character(the_sex))
   prenoms %>%
     filter(name == the_name,sex == the_sex) %>%
     group_by(year) %>%
     summarise(n=sum(n,na.rm=TRUE)) %>%
     ggplot(aes(year,n)) + geom_line() +
     ggtitle(paste(the_name)) + ggthemes::theme_gdocs()
-
 }

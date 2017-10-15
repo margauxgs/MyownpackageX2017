@@ -1,5 +1,5 @@
 ---
-title: "My own package X 2017"
+title: "MyownpackageX2017"
 author: "Margaux Girard-Soppet"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
