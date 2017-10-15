@@ -14,3 +14,6 @@ Imports: assertthat,
     dplyr,
     tidyr,
     readxl
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
