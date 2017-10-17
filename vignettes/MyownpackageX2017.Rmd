@@ -9,50 +9,27 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+This package contains five useful functions to deal with excel and csv files and to plot some useful graphs based on the dataset prenoms.
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+## save_as_csv
 
-## Vignette Info
+This function allows the user to save a data frame in a csv file, outputting the full path of the csv.
 
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
+## my_csv_reader
 
-## Styles
+This function takes all the csv files from a folder, import them and put them in a list.
 
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+## multi_excel
 
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
+This function imports all sheets from an xlsx file and puts them in a list.
 
-## Figures
+## draw_names
 
-The figure sizes have been customised so that you can easily put two images side-by-side. 
+This function simultaneously plots the popularity of more than one name from the prenoms dataset.
 
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
+## draw_a_name
 
-You can enable figure captions by `fig_caption: yes` in YAML:
+This function plots the popularity of names in times using the_name and the_sex as arguments.
 
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
 
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
 
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))

@@ -2,7 +2,7 @@
 % Please edit documentation in R/draw_names.R
 \name{draw_names}
 \alias{draw_names}
-\title{Simultaneously plot the popularity of more than one name}
+\title{Simultaneously plots the popularity of more than one name}
 \usage{
 draw_names(names)
 }
@@ -13,7 +13,7 @@ draw_names(names)
 a graph
 }
 \description{
-Simultaneously plot the popularity of more than one name
+Simultaneously plots the popularity of more than one name
 }
 \examples{
 \dontrun{

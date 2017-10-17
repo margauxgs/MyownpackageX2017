@@ -7,7 +7,9 @@
 draw_a_name(the_name, the_sex)
 }
 \arguments{
-\item{the_sex}{}
+\item{the_name}{name we want to draw the popularity of}
+
+\item{the_sex}{sex associated to the name we want to draw the popularity of}
 }
 \value{
 a graph

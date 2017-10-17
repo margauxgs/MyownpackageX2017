@@ -7,7 +7,7 @@
 my_csv_reader(folder)
 }
 \arguments{
-\item{folder}{the folder which contains all the csv files to be imported}
+\item{folder}{the path to the folder which contains all the csv files to be imported}
 }
 \value{
 a list

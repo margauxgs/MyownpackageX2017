@@ -10,3 +10,6 @@ devtools::use_package("dplyr")
 devtools::use_package("tidyr")
 devtools::use_data(prenoms)
 devtools::use_vignette("MyownpackageX2017")
+devtools::use_package("ggthemes")
+devtools::build_vignettes()
+
